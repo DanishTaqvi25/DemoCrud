@@ -49,7 +49,7 @@ class AuthController extends Controller
         return redirect('login')->withErrors(['login' => 'Invalid email or password']);
     }
 
-    public function dashboard()
+     public function dashboard()
     {
         return view('dashboard')->with('user', Auth::user());
     }
