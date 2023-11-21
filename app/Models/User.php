@@ -13,4 +13,4 @@ class User extends Model
     {
         $this->attributes['password'] = Hash::make($value);
     }
-}
+} 
